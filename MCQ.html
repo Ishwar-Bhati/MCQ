@@ -1,0 +1,699 @@
+<html>
+	<head>
+		<title></title>
+		
+		<style>
+			.show
+			{
+				border: 5px solid black;
+				width: 85%;
+				background-color:antiquewhite;
+				margin: 10 auto ;
+				display: block;
+			}
+			
+			.hide
+			{
+				display:none;
+			}
+			
+			.span
+			{
+				margin-left: 30px;
+				font-size: 25px;
+				width: 80%;
+				height: 100%;
+				
+			}
+			.rbutton
+			{
+				background-color: green;
+				transform:scale(1.5);
+			}
+			.wbutton
+			{
+				background-color: red;
+				opacity: 0.5;
+			}
+			
+			
+			.submit
+			{
+				color: crimson;
+				font-size: 25px;
+				width: 220px;
+				height: 40px;
+				background-color: darkblue;
+				;
+			}
+			.h3
+			{
+				display: block;
+				color:firebrick;
+			}
+		</style>
+	</head>
+<body>
+	<div id="div2">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<center>
+		<input type="text" placeholder="Enter Name" id="name" required  style="width: 250px;height: 50px;color:white;background-color: darkmagenta;font-size: 30px" >
+		<input type="submit" value="Enter" onClick="E()" style="width: 200px;height: 50px;color:white;background-color: burlywood;font-size: 30px"></center>
+	</div>
+	
+	<div id="main"> 
+		<i><h1 align="center"><mark id="pname" style="background-color: magenta;"></mark></h1>
+		
+		<h3 id="note" class="hide">&nbsp;&nbsp;&nbsp; Note! = If you answer a question correctly then you will get +1 mark and if you answer wrongly then you will get -1 mark .</h3></i><br>
+	
+		<span class="hide" id="span1">
+			Q1. Choose the correct HTML element for the largest heading : &nbsp;&nbsp;&nbsp;&nbsp; <span id="q1m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="<h6>" id="q11" onClick="q1(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="<head>" id="q12" onClick="q1(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="<h1>" id="q13" onClick="q1(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="<heading>" id="q14" onClick="q1(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+	
+		
+		<span class="hide" id="span2" >
+			Q2. Which character is used to indicate an end tag ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q2m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="     /     " id="q21" onClick="q2(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="     *     " id="q22" onClick="q2(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="     ^     " id="q23" onClick="q2(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="     <     " id="q24" onClick="q2(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+		
+		
+		
+		<span class="hide" id="span3" >
+			Q3. How can you make a numbered list ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q3m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="  <list>  " id="q31" onClick="q3(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="  <ol>  " id="q32" onClick="q3(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="  <dl>  " id="q33" onClick="q3(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="  <ul>  " id="q34" onClick="q3(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+	
+		
+		
+		<span class="hide" id="span4">
+			Q4. Which of these elements are all <xmp style="display:inline"><table></xmp>  elements ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q4m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="<table><tr><tt>" id="q41" onClick="q4(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="<thead><body><tr>" id="q42" onClick="q4(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="<table><head><tfoot>" id="q43" onClick="q4(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="<table><tr><td>" id="q44" onClick="q4(4)" style="font-size: 15px;margin-left: 30px">
+	</span><br><br><br>
+	
+		
+		<span class="hide" id="span5" >
+			Q5. What is the correct HTML for making a checkbox ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q5m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="<checkbox>" id="q51" onClick="q5(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value=" <input type='check'> " id="q52" onClick="q5(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" <check> " id="q53" onClick="q5(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" <input type='checkbox'> " id="q54" onClick="q5(4)" style="font-size: 15px;margin-left: 40px">
+		</span><br><br><br>
+		
+		
+		
+		<span class="hide" id="span6" >
+			Q6. How can you make a bulleted list ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q6m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value="  <ol>  " id="q61" onClick="q6(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="  <list>  " id="q62" onClick="q6(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="  <ul>  " id="q63" onClick="q6(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="  <dl>  " id="q64" onClick="q6(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+		
+		
+		
+		<span class="hide" id="span7" >
+			Q7. In HTML, which attribute is used to specify that an input field must be filled out ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q7m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value=" required " id="q71" onClick="q7(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value=" validate " id="q72" onClick="q7(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" formvalidate "  id="q73" onClick="q7(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" placeholder " id="q74" onClick="q7(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+	
+		
+		
+		<span class="hide" id="span8">
+			Q8. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="q8m" style="border:5px solid black;border-radius: 50%"></span><br>
+			<input type="button" value=" longdesc " id="q81" onClick="q8(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value=" alt " id="q82" onClick="q8(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" src " id="q83" onClick="q8(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" title " id="q84" onClick="q8(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+	
+		
+		<span class="hide" id="span9" >
+			Q9. What is the correct HTML for making a drop-down list ? &nbsp;&nbsp;&nbsp;&nbsp; <span id="q9m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value=" <list> " id="q91" onClick="q9(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value="<input type='list'>" id="q92" onClick="q9(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value="<input type='dropdown'>" id="q93" onClick="q9(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" <select> " id="q94" onClick="q9(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br>
+		
+		
+		
+		<span class="hide" id="span10" >
+			Q10. What is the correct HTML element for inserting a line break ? &nbsp;&nbsp;&nbsp;&nbsp;<span id="q10m" style="border:5px solid black; border-radius: 50%"></span><br>
+			<input type="button" value=" <br> " id="q101" onClick="q10(1)" style="font-size: 15px;margin-left: 60px">
+			<input type="button" value=" <lb> " id="q102" onClick="q10(2)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" <break> " id="q103" onClick="q10(3)" style="font-size: 15px;margin-left: 30px">
+			<input type="button" value=" <hr> " id="q104" onClick="q10(4)" style="font-size: 15px;margin-left: 30px">
+		</span><br><br><br><br>
+	
+		<i><center><input type="button" id="sub" onClick="sub()" class="hide" value="Submit"></center><br>	
+		<center><h1 id="to" class="hide" align="center"></h1></center>
+		<center><h1 id="urm" class="hide" align="center"></h1></center>
+		<center><h1 id="per" class="hide" align="center"></h1></center></i>
+		
+			
+		<center><h3 style="background-color:chocolate; color:white;">Copyright ©: All Rights Reserved | <a href="https://github.com/Ishwar-Bhati">Ishwar Bhati</a></h3></center>
+	</div>
+	
+	
+	
+	
+	
+</body>
+	<script>
+	
+		function E()
+		{
+			document.getElementById("main").className="show";
+			name=document.getElementById("name").value;
+			document.getElementById("pname").innerHTML="Welcome : "+"  "+name;
+			document.getElementById("div2").className="hide";
+			document.getElementById("note").className="h3";
+			document.getElementById("span1").className="span";
+			document.getElementById("span2").className="span";
+			document.getElementById("span3").className="span";
+			document.getElementById("span4").className="span";
+			document.getElementById("span5").className="span";
+			document.getElementById("span6").className="span";
+			document.getElementById("span7").className="span";
+			document.getElementById("span8").className="span";
+			document.getElementById("span9").className="span";
+			document.getElementById("span10").className="span";
+			document.getElementById("sub").className="submit";
+		}
+		
+		
+		function q1(q1)
+		{
+			mark=0;
+			if(q1==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q1m").innerHTML=pmark;
+					document.getElementById("q11").className="wbutton";
+					document.getElementById("q12").className="wbutton";
+					document.getElementById("q13").className="rbutton";
+					document.getElementById("q14").className="wbutton";
+				}
+			else if(q1==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q1m").innerHTML=pmark;
+					document.getElementById("q11").className="wbutton";
+					document.getElementById("q12").className="wbutton";
+					document.getElementById("q13").className="rbutton";
+					document.getElementById("q14").className="wbutton";
+				}
+			 else if(q1==3)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q1m").innerHTML=pmark;
+					document.getElementById("q11").className="wbutton";
+					document.getElementById("q12").className="wbutton";
+					document.getElementById("q13").className="rbutton";
+					document.getElementById("q14").className="wbutton";
+				}
+			else if(q1==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q1m").innerHTML=pmark;
+					document.getElementById("q11").className="wbutton";
+					document.getElementById("q12").className="wbutton";
+					document.getElementById("q13").className="rbutton";
+					document.getElementById("q14").className="wbutton";
+				}
+		}
+	
+	
+	
+		
+		function q2(q2)
+		{
+
+			if(q2==1)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q2m").innerHTML=pmark;
+					document.getElementById("q21").className="rbutton";
+					document.getElementById("q22").className="wbutton";
+					document.getElementById("q23").className="wbutton";
+					document.getElementById("q24").className="wbutton";
+				}
+			else if(q2==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q2m").innerHTML=pmark;
+					document.getElementById("q21").className="rbutton";
+					document.getElementById("q22").className="wbutton";
+					document.getElementById("q23").className="wbutton";
+					document.getElementById("q24").className="wbutton";
+				}
+			 else if(q2==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q2m").innerHTML=pmark;
+					document.getElementById("q21").className="rbutton";
+					document.getElementById("q22").className="wbutton";
+					document.getElementById("q23").className="wbutton";
+					document.getElementById("q24").className="wbutton";
+				}
+			else if(q2==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q2m").innerHTML=pmark;
+					document.getElementById("q21").className="rbutton";
+					document.getElementById("q22").className="wbutton";
+					document.getElementById("q23").className="wbutton";
+					document.getElementById("q24").className="wbutton";
+				}
+		}
+		
+		
+		
+		
+		function q3(q3)
+		{
+
+			if(q3==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q3m").innerHTML=pmark;
+					document.getElementById("q31").className="wbutton";
+					document.getElementById("q32").className="rbutton";
+					document.getElementById("q33").className="wbutton";
+					document.getElementById("q34").className="wbutton";
+				}
+			else if(q3==2)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q3m").innerHTML=pmark;
+					document.getElementById("q31").className="wbutton";
+					document.getElementById("q32").className="rbutton";
+					document.getElementById("q33").className="wbutton";
+					document.getElementById("q34").className="wbutton";
+				}
+			 else if(q3==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q3m").innerHTML=pmark;
+					document.getElementById("q31").className="wbutton";
+					document.getElementById("q32").className="rbutton";
+					document.getElementById("q33").className="wbutton";
+					document.getElementById("q34").className="wbutton";
+				}
+			 else if(q3==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q3m").innerHTML=pmark;
+					document.getElementById("q31").className="wbutton";
+					document.getElementById("q32").className="rbutton";
+					document.getElementById("q33").className="wbutton";
+					document.getElementById("q34").className="wbutton";
+				}
+		}
+		
+		function q4(q4)
+		{
+
+			if(q4==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q4m").innerHTML=pmark;
+					document.getElementById("q41").className="wbutton";
+					document.getElementById("q42").className="wbutton";
+					document.getElementById("q43").className="wbutton";
+					document.getElementById("q44").className="rbutton";
+				}
+			else if(q4==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q4m").innerHTML=pmark;
+					document.getElementById("q41").className="wbutton";
+					document.getElementById("q42").className="wbutton";
+					document.getElementById("q43").className="wbutton";
+					document.getElementById("q44").className="rbutton";
+				}
+			 else if(q4==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q4m").innerHTML=pmark;
+					document.getElementById("q41").className="wbutton";
+					document.getElementById("q42").className="wbutton";
+					document.getElementById("q43").className="wbutton";
+					document.getElementById("q44").className="rbutton";
+				}
+			 else if(q4==4)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q4m").innerHTML=pmark;
+					document.getElementById("q41").className="wbutton";
+					document.getElementById("q42").className="wbutton";
+					document.getElementById("q43").className="wbutton";
+					document.getElementById("q44").className="rbutton";
+				}
+		}
+		
+		
+		function q5(q5)
+		{
+
+			if(q5==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q5m").innerHTML=pmark;
+					document.getElementById("q51").className="wbutton";
+					document.getElementById("q52").className="wbutton";
+					document.getElementById("q53").className="wbutton";
+					document.getElementById("q54").className="rbutton";
+				}
+			else if(q5==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q5m").innerHTML=pmark;
+					document.getElementById("q51").className="wbutton";
+					document.getElementById("q52").className="wbutton";
+					document.getElementById("q53").className="wbutton";
+					document.getElementById("q54").className="rbutton";
+				}
+			 else if(q5==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q5m").innerHTML=pmark;
+					document.getElementById("q51").className="wbutton";
+					document.getElementById("q52").className="wbutton";
+					document.getElementById("q53").className="wbutton";
+					document.getElementById("q54").className="rbutton";
+				}
+			 else if(q5==4)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q5m").innerHTML=pmark;
+					document.getElementById("q51").className="wbutton";
+					document.getElementById("q52").className="wbutton";
+					document.getElementById("q53").className="wbutton";
+					document.getElementById("q54").className="rbutton";
+				}
+		}
+		
+		
+		function q6(q6)
+		{
+			
+			if(q6==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q6m").innerHTML=pmark;
+					document.getElementById("q61").className="wbutton";
+					document.getElementById("q62").className="wbutton";
+					document.getElementById("q63").className="rbutton";
+					document.getElementById("q64").className="wbutton";
+				}
+			else if(q6==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q6m").innerHTML=pmark;
+					document.getElementById("q61").className="wbutton";
+					document.getElementById("q62").className="wbutton";
+					document.getElementById("q63").className="rbutton";
+					document.getElementById("q64").className="wbutton";
+				}
+			 else if(q6==3)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q6m").innerHTML=pmark;
+					document.getElementById("q61").className="wbutton";
+					document.getElementById("q62").className="wbutton";
+					document.getElementById("q63").className="rbutton";
+					document.getElementById("q64").className="wbutton";
+				}
+			else if(q6==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q6m").innerHTML=pmark;
+					document.getElementById("q61").className="wbutton";
+					document.getElementById("q62").className="wbutton";
+					document.getElementById("q63").className="rbutton";
+					document.getElementById("q64").className="wbutton";
+				}
+		}
+		
+		
+		
+		function q7(q7)
+		{
+
+			if(q7==1)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q7m").innerHTML=pmark;
+					document.getElementById("q71").className="rbutton";
+					document.getElementById("q72").className="wbutton";
+					document.getElementById("q73").className="wbutton";
+					document.getElementById("q74").className="wbutton";
+				}
+			else if(q7==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q7m").innerHTML=pmark;
+					document.getElementById("q71").className="rbutton";
+					document.getElementById("q72").className="wbutton";
+					document.getElementById("q73").className="wbutton";
+					document.getElementById("q74").className="wbutton";
+				}
+			 else if(q7==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q7m").innerHTML=pmark;
+					document.getElementById("q71").className="rbutton";
+					document.getElementById("q72").className="wbutton";
+					document.getElementById("q73").className="wbutton";
+					document.getElementById("q74").className="wbutton";
+				}
+			else if(q7==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q7m").innerHTML=pmark;
+					document.getElementById("q71").className="rbutton";
+					document.getElementById("q72").className="wbutton";
+					document.getElementById("q73").className="wbutton";
+					document.getElementById("q74").className="wbutton";
+				}
+		}
+		
+		
+		
+		
+		function q8(q8)
+		{
+
+			if(q8==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q8m").innerHTML=pmark;
+					document.getElementById("q81").className="wbutton";
+					document.getElementById("q82").className="rbutton";
+					document.getElementById("q83").className="wbutton";
+					document.getElementById("q84").className="wbutton";
+				}
+			else if(q8==2)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q8m").innerHTML=pmark;
+					document.getElementById("q81").className="wbutton";
+					document.getElementById("q82").className="rbutton";
+					document.getElementById("q83").className="wbutton";
+					document.getElementById("q84").className="wbutton";
+				}
+			 else if(q8==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q8m").innerHTML=pmark;
+					document.getElementById("q81").className="wbutton";
+					document.getElementById("q82").className="rbutton";
+					document.getElementById("q83").className="wbutton";
+					document.getElementById("q84").className="wbutton";
+				}
+			 else if(q8==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q8m").innerHTML=pmark;
+					document.getElementById("q81").className="wbutton";
+					document.getElementById("q82").className="rbutton";
+					document.getElementById("q83").className="wbutton";
+					document.getElementById("q84").className="wbutton";
+				}
+		}
+		
+		
+		function q9(q9)
+		{
+
+			if(q9==1)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q9m").innerHTML=pmark;
+					document.getElementById("q91").className="wbutton";
+					document.getElementById("q92").className="wbutton";
+					document.getElementById("q93").className="wbutton";
+					document.getElementById("q94").className="rbutton";
+				}
+			else if(q9==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q9m").innerHTML=pmark;
+					document.getElementById("q91").className="wbutton";
+					document.getElementById("q92").className="wbutton";
+					document.getElementById("q93").className="wbutton";
+					document.getElementById("q94").className="rbutton";
+				}
+			 else if(q9==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q9m").innerHTML=pmark;
+					document.getElementById("q91").className="wbutton";
+					document.getElementById("q92").className="wbutton";
+					document.getElementById("q93").className="wbutton";
+					document.getElementById("q94").className="rbutton";
+				}
+			 else if(q9==4)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q9m").innerHTML=pmark;
+					document.getElementById("q91").className="wbutton";
+					document.getElementById("q92").className="wbutton";
+					document.getElementById("q93").className="wbutton";
+					document.getElementById("q94").className="rbutton";
+				}
+		}
+		
+		
+		function q10(q10)
+		{
+
+			if(q10==1)
+				{
+					mark=mark+1;
+					pmark="+1";
+					document.getElementById("q10m").innerHTML=pmark;
+					document.getElementById("q101").className="rbutton";
+					document.getElementById("q102").className="wbutton";
+					document.getElementById("q103").className="wbutton";
+					document.getElementById("q104").className="wbutton";
+				}
+			else if(q10==2)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q10m").innerHTML=pmark;
+					document.getElementById("q101").className="rbutton";
+					document.getElementById("q102").className="wbutton";
+					document.getElementById("q103").className="wbutton";
+					document.getElementById("q104").className="wbutton";
+				}
+			 else if(q10==3)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q10m").innerHTML=pmark;
+					document.getElementById("q101").className="rbutton";
+					document.getElementById("q102").className="wbutton";
+					document.getElementById("q103").className="wbutton";
+					document.getElementById("q104").className="wbutton";
+				}
+			else if(q10==4)
+				{
+					mark=mark-1;
+					pmark="-1";
+					document.getElementById("q10m").innerHTML=pmark;
+					document.getElementById("q101").className="rbutton";
+					document.getElementById("q102").className="wbutton";
+					document.getElementById("q103").className="wbutton";
+					document.getElementById("q104").className="wbutton";
+				}
+		}
+		
+		
+		
+		
+		function sub()
+		{
+			
+			con=confirm("Are you sure for submit")
+			
+			if(con==true)
+				{
+					document.getElementById("sub").className="hide";
+					document.getElementById("to").className="submit";
+					document.getElementById("urm").className="submit";
+					document.getElementById("per").className="submit";
+			
+					to="Total Mark's = 10"
+					document.getElementById("to").innerHTML=to;
+			
+					Mmark="Your Mark's = "+mark
+					document.getElementById("urm").innerHTML=Mmark;
+			
+					per="Percentage = "+((mark*100)/10)+"%"
+					document.getElementById("per").innerHTML=per;
+				}
+			else
+				{
+					
+				}
+		}
+		
+	</script>
+</html>
+
+<center><h3 style="display:none; background-color:chocolate; color:white;">Copyright ©: All Rights Reserved | <a href="https://github.com/Ishwar-Bhati">Ishwar Bhati</a></h3></center>
